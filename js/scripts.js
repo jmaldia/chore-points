@@ -7,7 +7,18 @@ function httpGet(theUrl) {
     return xmlHttp.responseText;
 }
 
+// CONVERT RETURN VALUE TO JSON
 var dataJSON = JSON.parse(httpGet(choreEarnedDataURL));
 
-console.log('START HERE:')
-console.log(dataJSON.reward[0].amount);
+// VARIABLE TO BE DISPLAYED
+var earnedCash = dataJSON.reward[0].amount;
+var earnedPass = dataJSON.reward[10].amount;
+
+// DISPLAY DATA ON PAGE
+document.getElementById("earned-cash").innerHTML = "$" + earnedCash;
+document.getElementById("earned-PASS").innerHTML = earnedPass;
+
+// console.log('START HERE:')
+// console.log(dataJSON.reward);
+// console.log(earnedCash);
+// console.log(earnedPass);
