@@ -11,7 +11,7 @@ function httpGet(theUrl) {
 var dataJSON = JSON.parse(httpGet(choreEarnedDataURL));
 
 // VARIABLE TO BE DISPLAYED
-var earnedCash = dataJSON.reward[0].amount;
+var earnedCash = dataJSON.reward[0].amount.toFixed(2);
 var earnedPass = dataJSON.reward[10].amount;
 
 // DISPLAY DATA ON PAGE
@@ -20,5 +20,5 @@ document.getElementById("earned-pass").innerHTML = earnedPass;
 
 console.log('START HERE:')
 // console.log(dataJSON.reward);
-console.log(earnedCash);
+console.log(typeof earnedCash);
 console.log(earnedPass);
