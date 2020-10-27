@@ -52,8 +52,8 @@ background: linear-gradient(180deg, rgba(46,204,113,1) 0%, rgba(46,204,113,1) 35
 
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .main {
-        width: 100%;
+        width: 450px;
     }
 }
