@@ -16,9 +16,9 @@ var earnedPass = dataJSON.reward[10].amount;
 
 // DISPLAY DATA ON PAGE
 document.getElementById("earned-cash").innerHTML = "$" + earnedCash;
-document.getElementById("earned-PASS").innerHTML = earnedPass;
+document.getElementById("earned-pass").innerHTML = earnedPass;
 
-// console.log('START HERE:')
+console.log('START HERE:')
 // console.log(dataJSON.reward);
-// console.log(earnedCash);
-// console.log(earnedPass);
+console.log(earnedCash);
+console.log(earnedPass);
