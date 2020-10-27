@@ -1,5 +1,5 @@
-// var choreEarnedDataURL = 'https://api.sheety.co/d0224c1122eba3307dc190260ea81f6c/cadenceRewards/reward';
-var choreEarnedDataURL = process.env.SHEETYAPI;
+var choreEarnedDataURL = 'https://api.sheety.co/d0224c1122eba3307dc190260ea81f6c/cadenceRewards/reward';
+// var choreEarnedDataURL = process.env.SHEETYAPI;
 
 function httpGet(theUrl) {
     var xmlHttp = new XMLHttpRequest();
